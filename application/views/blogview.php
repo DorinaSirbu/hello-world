@@ -1,8 +1,19 @@
 <html>
 <head>
-<title>My Blog</title>
+<title><?= $title;?></title>
 </head>
 <body>
-	<h1>Welcome to my Blog!</h1>
+<h1><?= $heading;?></h1>
+
+<h3>My Todo List</h3>
+
+<ul>
+    <?php foreach ($todo_list as $item):?>
+
+    <li><?= $item;?></li>
+
+    <?php endforeach;?>
+</ul>
+
 </body>
 </html>

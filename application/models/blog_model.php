@@ -9,7 +9,8 @@ class Blog_model extends CI_Model {
     function __construct()
     {
         // Call the Model constructor
-        parent::__construct();
+//        parent::__construct();
+        $this->load->database();
     }
     
     function get_last_ten_entries()

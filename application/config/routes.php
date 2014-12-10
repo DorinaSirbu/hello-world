@@ -52,6 +52,7 @@ $route['default_controller'] = 'pages/view';
 $route['blog'] = 'blog';
 $route['blog/comments'] = 'blog/comments';
 $route['products/shoes'] = 'products/shoes';
+$route['blogview'] = 'blogview';
 
 
 

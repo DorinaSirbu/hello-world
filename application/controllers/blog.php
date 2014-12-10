@@ -10,14 +10,14 @@ class Blog extends CI_Controller {
 
 		$this->load->view('blogview', $data);
 	}
-        function blog()
-        {
-            $this->load->model('blog_model');
-
-            $data['query'] = $this->blog->get_last_ten_entries();
-
-            $this->load->view('blogview', $data);
-        }
+//        function blog()
+//        {
+//            $this->load->model('blog');
+//
+//            $data['query'] = $this->blog->get_last_ten_entries();
+//
+//            $this->load->view('blog', $data);
+//        }
 
 	public function comments()
 	{

@@ -25,6 +25,11 @@
  * @link		http://codeigniter.com/user_guide/libraries/config.html
  */
 class CI_Model {
+    
+    
+    var $title   = '';
+    var $content = '';
+    var $date    = '';
 
 	/**
 	 * Constructor
@@ -76,7 +81,9 @@ class CI_Model {
                 );
 
                 return $this->db->insert('news', $data);
+                
 //blog_model
+                
         }
         function get_last_ten_entries()
         {
